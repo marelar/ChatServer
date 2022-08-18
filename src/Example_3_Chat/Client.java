@@ -10,14 +10,11 @@ import java.util.Scanner;
 class Client implements Runnable {
     Socket socket;
     String nickname;
-
-
     Scanner in;
     PrintStream out;
     ChatServer server;
 
     public Client(Socket socket, ChatServer server) {
-
         this.socket = socket;
         this.server = server;
         // запускаем поток для клиента
